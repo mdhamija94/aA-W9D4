@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/*  */
+
+button {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.content {
+  background-color: white;
+  width: 80%;
+  /* display: flex; */
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px 20px; */
+  color: white;
+  font-weight: 500;
+  background: lightblue;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.left-nav {
+  display: flex;
+  /* justify-content: space-evenly; */
+  width: 40%;
+}
+
+.user-h1 {
+  display: flex;
+  margin: auto;
+}
