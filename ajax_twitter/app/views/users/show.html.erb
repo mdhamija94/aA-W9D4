@@ -1,4 +1,6 @@
-<h1 class="user-h1"><%= @user.username %></h1>
+<div class="page-header">
+  <h1><%= @user.username %>'s Timeline</h1>
+</div>
 
 <%= render 'follows/form', user: @user %>
 
